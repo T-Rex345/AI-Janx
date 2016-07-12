@@ -4,3 +4,7 @@
   <%= f.text_field :response %>
   <%= f.submit "Talk" %>
 <% end %>
+
+<% @janxes.each do |janx| %>
+  <%= janx.response %><br>
+<% end %>
