@@ -1,3 +1,4 @@
-class JanxController < BaseController
-	
+class JanxController < ActionController::Base
+    def index
+    end
 end
