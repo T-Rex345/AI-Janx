@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get '/', to: 'janx#index'
+  root 'janx#index'
+  resources :janxes
 end
