@@ -1,1 +1,6 @@
 <h2>AI Janx Version: 0.0.1</h2>
+
+<%= form_for Janx.new do |f| %>
+  <%= f.text_field :response %>
+  <%= f.submit "Talk" %>
+<% end %>

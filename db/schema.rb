@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160712003313) do
+ActiveRecord::Schema.define(version: 20160712140451) do
 
-  create_table "janx", force: :cascade do |t|
+  create_table "janxes", force: :cascade do |t|
     t.string  "name"
     t.string  "response"
     t.string  "mood"
