@@ -1,0 +1,3 @@
+class JanxController < BaseController
+	
+end
