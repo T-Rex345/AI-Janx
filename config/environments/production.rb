@@ -19,6 +19,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
+  config.assets.css_compressor = :yui
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
@@ -68,6 +69,7 @@ Rails.application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
+  config.serve_static_files = true
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 

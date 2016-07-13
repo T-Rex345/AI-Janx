@@ -1,3 +1,6 @@
+<%= stylesheet_link_tag "application" %>
+
+<div class="Janx-Container">
 <h2>AI Janx Version: 0.0.1</h2>
 
 <%= form_for Janx.new do |f| %>
@@ -5,6 +8,13 @@
   <%= f.submit "Talk" %>
 <% end %>
 
-<% @janxes.each do |janx| %>
-  <%= janx.response %><br>
-<% end %>
+
+
+<img src="http://cliparts.co/cliparts/8TE/6x7/8TE6x7K9c.png" alt="" class="Janx">
+
+<div class="text-box">
+  <% @janxes.each do |janx| %>
+    <%= janx.response %>
+  <% end %>
+</div>
+</div>
