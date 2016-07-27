@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160712140451) do
+ActiveRecord::Schema.define(version: 20160727154644) do
 
   create_table "janxes", force: :cascade do |t|
     t.string  "name"
     t.string  "response"
     t.string  "mood"
     t.integer "intensity"
+  end
+
+  create_table "user_chat_fields", force: :cascade do |t|
+    t.string  "user_text"
+    t.integer "previous_text"
   end
 
 end
