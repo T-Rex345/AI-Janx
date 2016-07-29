@@ -3,8 +3,8 @@
 <div class="Janx-Container">
 <h2>AI Janx Version: 0.0.2</h2>
 
-<%= form_for Janx.new do |f| %>
-  <%= f.text_field :response %>
+<%= form_for UserChatField.new do |f| %>
+  <%= f.text_field :user_text %>
   <%= f.submit "Talk" %>
 <% end %>
 
